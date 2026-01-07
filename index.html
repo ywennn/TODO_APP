@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO APP</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>TODO LIST</h1>
+
+    <main>
+      <form id="todo-form" class="todo-form">
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="Add a new todo..."
+          required
+        />
+        <button type="submit" id="add-button">Add</button>
+      </form>
+
+      <div class="list-container">
+        <ul id="todo-list"></ul>
+        <div class="controls">
+          <div>
+            <button id="clear-completed">Clear Completed</button>
+            <button id="clear-all">Clear All</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

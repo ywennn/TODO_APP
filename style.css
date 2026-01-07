@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+  background-color: brown;
+}
+main {
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+}
+h1 {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+}
+
+main .todo-form,
+main .list-container {
+  width: 80%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+main .todo-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+main .todo-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid brown;
+  border-radius: 5px;
+}
+
+main .todo-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: brown;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+main .todo-form button:hover {
+  background-color: #a0522d;
+}
+
+main .list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 10px 0 10px;
+  height: 300px;
+  overflow: auto;
+  position: relative;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: brown transparent;
+}
+
+.list-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.list-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.list-container::-webkit-scrollbar-thumb {
+  background-color: brown;
+  border-radius: 5px;
+  border: 40px solid transparent;
+}
+
+.list-container::-webkit-scrollbar-thumb:hover {
+  background-color: darkred;
+}
+main .list-container p {
+  text-align: center;
+  color: brown;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+main .list-container::-webkit-scrollbar {
+  color: brown;
+  width: 10px;
+}
+main .list-container .controls {
+  position: sticky;
+  padding: 10px;
+  bottom: 0px;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-end;
+}
+
+main .list-container .controls button {
+  padding: 10px;
+  background-color: brown;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+main .list-container .controls button:hover {
+  background-color: #a0522d;
+}
+
+main .list-container ul {
+  list-style-type: none;
+  width: 100%;
+  margin-bottom: 20px;
+}
+main .list-container ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.2rem;
+  color: brown;
+}
+main .list-container ul li .action-buttons {
+  display: flex;
+  gap: 10px;
+}
+main .list-container ul li .action-buttons .completed-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #4caf50;
+}
+
+main .list-container ul li .action-buttons button {
+  padding: 5px 10px;
+  background-color: brown;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+main .list-container ul li .action-buttons button:hover {
+  background-color: #a0522d;
+}
